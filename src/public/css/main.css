@@ -9,9 +9,228 @@
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
-body {
-    background-color: var(--main-color);
+* {
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--bg-color-1);
+}
+
+body.active {
+    --bg-color-1: #222;
+    --bg-color-2: #333;
+    --text-color-1: #fff;
+    --text-color-2: #eee;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+}
+
+/* This should be a class */
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    margin-top: .5rem;
+    display: inline-block;
+    padding: .9rem 3.5rem;
+    font-size: 1.7rem;
+    color: var(--bg-color-2);
+    background: var(--main-color);
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+    opacity: .8;
+}
+
+.heading {
+    text-align: center;
+    color: var(--text-color-1);
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-color-2);
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--text-color-1);
+}
+
+.header .icons div {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-1);
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    background: var(--main-color);
+    color: var(#fff);
+}
+
+.header .navbar {
+    position: absolute;
+    top: 115%;
+    right: 9%;
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 25rem;
+    padding: 1rem;
+    display: none;
+}
+
+.header .navbar.active {
+    display: block;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--text-color-1);
+    display: block;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    padding-left: 2rem;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 9%;
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 50rem;
+    padding: 1rem;
+    display: none;
+}
+
+.header .search-form.active {
+    display: flex;
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    padding: 1rem;
+}
+
+.header .search-form label {
+    color: var(--text-color-1);
+    font-size: 2rem;
+    padding-right: .8rem;
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
+
+.header .colors-palette {
+    position: absolute;
+    top: 115%;
+    right: 9%;
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+    display: none;
+}
+
+.header .colors-palette.active {
+    display: block;
+}
+
+.header .colors-palette h3 {
+    padding: .7rem;
+    font-size: 2rem;
+    color: var(--text-color-1);
+}
+
+.header .colors-palette .colors {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .7rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header .colors-palette .colors .color {
+    border-radius: .5rem;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
 
 
 
