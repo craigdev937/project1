@@ -25,7 +25,28 @@ colorBtn.onclick = () => {
     searchForm.classList.remove("active");
 };
 
+window.onscroll = () => {
+    navbar.classList.remove("active");
+    searchForm.classList.remove("active");
+    colorsPalette.classList.remove("active");
+};
 
+document.querySelectorAll(".colors-palet .color")
+.forEach((btn) => {
+    btn.onclick = () => {
+        let color = btn.getElementsByClassName.background;
+        document.querySelector(":root")
+        .style.setProperty("--main-color", color);
+    }
+});
 
+themeBtn.onclick = () => {
+    themeBtn.classList.toggle("fa-sun");
+    if (themeBtn.classList.contains("fa-sun")) {
+        document.body.classList.add("active");
+    } else {
+        document.body.classList.remove("active");
+    }
+};
 
 
