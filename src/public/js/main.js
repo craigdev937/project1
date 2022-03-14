@@ -35,8 +35,7 @@ document.querySelectorAll(".colors-palet .color")
 .forEach((btn) => {
     btn.onclick = () => {
         let color = btn.getElementsByClassName.background;
-        document.querySelector(":root")
-        .style.setProperty("--main-color", color);
+        document.querySelector(":root").style.setProperty("--main-color", color);
     }
 });
 

@@ -1,8 +1,9 @@
 import express from "express";
-import { HomeIndex } from "../controllers/homeCon.js";
+import { PAGES } from "../controllers/homeCon.js";
 
 export const homeRt = express.Router();
-    homeRt.get("/", HomeIndex);
+    homeRt.get("/", PAGES.HomeIndex);
+    homeRt.get("/math", PAGES.Math);
 
 
 

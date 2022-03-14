@@ -51,7 +51,7 @@ body.active {
     --bg-color-2: #333;
     --text-color-1: #fff;
     --text-color-2: #eee;
-    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.3);
 }
 
 /* Unknown Section  */
@@ -367,6 +367,12 @@ section {
 
 .gallery .box-container .box:hover .content {
     transform: scale(1);
+}
+
+.gallery .box-container .box:hover .content h3,
+.gallery .box-container .box:hover .content span {
+    transform: translateY(0rem);
+    opacity: 1;
 }
 
 .gallery .box-container .box:hover .content h3,
