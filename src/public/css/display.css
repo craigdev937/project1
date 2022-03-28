@@ -1,0 +1,31 @@
+body {
+    background-color: #cccccc;
+}
+
+#aside-1 {
+    display: block;
+    background-color: red;
+}
+
+#aside-2 {
+    display: none;
+    background-color: blue;
+}
+
+#span-1 {
+    display: inline;
+    background-color: cyan;
+}
+
+#span-2 {
+    display: inline;
+    background-color: purple;
+}
+
+#img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+

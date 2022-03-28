@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(115, 134, 148);
+}
+
+.container {
+    display: flex;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.item-1 {
+    min-height: 100px;
+    background: #800080;
+}
+
+.item-2 {
+    min-height: 200px;
+    background: #ffa500;
+}
+
+.item-3 {
+    min-height: 300px;
+    background: #16016155;
+}
+
+

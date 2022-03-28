@@ -1,0 +1,25 @@
+body {
+    background-color: #333;
+}
+
+.parent {
+    background-color: #00aaff;
+    padding: 5px;
+    height: 200vh;
+}
+
+.child-one {
+    background-color: #74ff74;
+    position: sticky;
+    top: 0px;
+}
+
+.child-two {
+    background-color: #f87575;
+}
+
+.child-three {
+    background-color: #ff74e8;
+}
+
+
